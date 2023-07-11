@@ -1,12 +1,109 @@
 import re
 
-def replace_newlines(text):
-    return re.sub("\n{3,}", "\n\n", text)
+packages = '''
+import requests
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import pdfplumber
+import time
+from io import BytesIO
+import requests
+import base64
+from googleapiclient.discovery import build
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from io import BytesIO
+import pdfplumber
+import html2text
+import re
+import requests
+from bs4 import BeautifulSoup
+import time
+import praw
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import time
+import requests
+from bs4 import BeautifulSoup
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import time
+import requests
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import html2text
+import requests
+import time
+import openai
+import numpy as np
+import tiktoken
+import os
+import asyncio
+from telegram import Bot
+import google.cloud.aiplatform as aiplatform
+from vertexai.preview.language_models import ChatModel, InputOutputTextPair, ChatMessage
+from fastapi.openapi.docs import get_swagger_ui_html, get_redoc_html
+import vertexai
+import json
+from google.oauth2 import service_account
+from ast import literal_eval
+import re
+import os
+from vertexai.language_models import TextGenerationModel
+import google.cloud.aiplatform as aiplatform
+from vertexai.preview.language_models import ChatModel, InputOutputTextPair, ChatMessage
+from fastapi.openapi.docs import get_swagger_ui_html, get_redoc_html
+import vertexai
+import json 
+from google.oauth2 import service_account
+from ast import literal_eval
+import os
+from vertexai.preview.language_models import TextEmbeddingModel
+import google.cloud.aiplatform as aiplatform
+from vertexai.preview.language_models import ChatModel, InputOutputTextPair, ChatMessage
+from fastapi.openapi.docs import get_swagger_ui_html, get_redoc_html
+import vertexai
+import json
+from google.oauth2 import service_account
+import numpy as np
+from ast import literal_eval
+import os
+from boost_query import get_boosted_query
+from search import search
+import json
+from io import BytesIO
+from PIL import Image
+import streamlit as st
+import base64
+import time
+import concurrent.futures
+from markdown import markdown
+from datetime import datetime, timedelta
+import tiktoken
+import re
+import os
+import streamlit.components.v1 as components
+import validators
+import google.cloud.aiplatform as aiplatform
+from vertexai.preview.language_models import ChatModel, InputOutputTextPair, ChatMessage, TextGenerationModel
+from fastapi.openapi.docs import get_swagger_ui_html, get_redoc_html
+import vertexai
+import json
+from google.oauth2 import service_account
+import numpy as np
+import os
+from ast import literal_eval
+'''
+# create requirements.txt with all the packages unique
+unique_packages = []
+for package in packages.split('\n'):
+    if package.strip() not in unique_packages:
+        unique_packages.append(package.strip())
+print(unique_packages)
+with open('requirements.txt', 'w') as f:
+    for package in unique_packages:
+        if package:
+            f.write(f"{package}\n")
+f.close()
 
-text = "Hello world\n\n\nI'm a Python program\n\n\n\nNice to meet you"
-new_text = replace_newlines(text)
 
-print(new_text)
+
+
 '''
 
 k = 'infw'
