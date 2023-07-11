@@ -1,0 +1,108 @@
+{
+    "Education, Learning & Literature": [
+        {
+            "name": "Khan Academy",
+            "url": "khanacademy.org"
+        },
+        {
+            "name": "Project Gutenberg",
+            "url": "gutenberg.org"
+        },
+        {
+            "name": "MIT OpenCourseWare",
+            "url": "ocw.mit.edu"
+        },
+        {
+            "name": "OpenStax",
+            "url": "openstax.org"
+        },
+        {
+            "name": "Internet Archive",
+            "url": "archive.org"
+        }
+    ],
+    "Coding": [
+        {
+            "name": "Python Docs",
+            "url": "docs.python.org"
+        },
+        {
+            "name": "C++ Docs",
+            "url": "cplusplus.com"
+        },
+        {
+            "name": "Java Docs",
+            "url": "docs.oracle.com"
+        },
+        {
+            "name": "JavaScript Docs",
+            "url": "developer.mozilla.org"
+        },
+        {
+            "name": "Flutter Docs",
+            "url": "flutter.dev"
+        },
+        {
+            "name": "StackOverflow",
+            "url": "stackoverflow.com"
+        }
+    ],
+    "Health & Science": [
+        {
+            "name": "PubMed",
+            "url": "pubmed.ncbi.nlm.nih.gov"
+        },
+        {
+            "name": "ArXiv",
+            "url": "arxiv.org"
+        },
+        {
+            "name": "WHO",
+            "url": "who.int"
+        },
+        {
+            "name": "CDC",
+            "url": "cdc.gov"
+        }
+    ],
+    "News & Media": [
+        {
+            "name": "Associated Press",
+            "url": "apnews.com"
+        },
+        {
+            "name": "Reuters",
+            "url": "reuters.com"
+        },
+        {
+            "name": "BBC News",
+            "url": "bbc.com"
+        },
+        {
+            "name": "The Guardian",
+            "url": "theguardian.com"
+        }
+    ],
+    "Data": [
+        {
+            "name": "Data.gov",
+            "url": "data.gov"
+        },
+        {
+            "name": "Census Bureau",
+            "url": "census.gov"
+        },
+        {
+            "name": "Google Dataset Search",
+            "url": "datasetsearch.research.google.com"
+        },
+        {
+            "name": "EU Open Data Portal",
+            "url": "data.europa.eu"
+        },
+        {
+            "name": "NASA's Data Portal",
+            "url": "data.nasa.gov"
+        }
+    ]
+}
