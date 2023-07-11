@@ -19,11 +19,11 @@ starlette==0.27.0
 google-cloud-aiplatform==1.27.1
 uvicorn==0.22.0
 
-import requests
-from concurrent.futures import ThreadPoolExecutor, as_completed
-import pdfplumber
-import time
-from io import BytesIO
+requests
+concurrent.futures
+pdfplumber
+time
+io
 import base64
 from googleapiclient.discovery import build
 import html2text
