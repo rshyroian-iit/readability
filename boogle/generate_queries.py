@@ -6,12 +6,16 @@ import json  # add this line
 from google.oauth2 import service_account
 from ast import literal_eval
 import re
+import os
+
 # Load the service account json file
 # Update the values in the json file with your own
-with open(
-    "service_account.json"
-) as f:  # replace 'serviceAccount.json' with the path to your file if necessary
-    service_account_info = json.load(f)
+#with open(
+#    "service_account.json"
+#) as f:  # replace 'serviceAccount.json' with the path to your file if necessary
+#    service_account_info = json.load(f)
+
+service_account_info = literal_eval(os.getenv("SERVICE_ACCOUNT_INFO"))
 
 my_credentials = service_account.Credentials.from_service_account_info(
     service_account_info

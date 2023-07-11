@@ -14,7 +14,7 @@ import os
 #) as f:  # replace 'serviceAccount.json' with the path to your file if necessary
 #    service_account_info = json.load(f)
 
-service_account_info = os.getenv("SERVICE_ACCOUNT_INFO")
+service_account_info = literal_eval(os.getenv("SERVICE_ACCOUNT_INFO"))
 
 my_credentials = service_account.Credentials.from_service_account_info(
     service_account_info
