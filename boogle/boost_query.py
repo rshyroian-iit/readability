@@ -25,10 +25,10 @@ aiplatform.init(
     credentials=my_credentials,
 )
 
-with open("service_account.json", encoding="utf-8") as f:
-    project_json = json.load(f)
-    project_id = project_json["project_id"]
-
+#with open("service_account.json", encoding="utf-8") as f:
+#    project_json = json.load(f)
+#    project_id = project_json["project_id"]
+project_id = service_account_info["project_id"]
 
 # Initialize Vertex AI with project and location
 vertexai.init(project=project_id, location="us-central1")
