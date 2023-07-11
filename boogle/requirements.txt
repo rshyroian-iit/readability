@@ -21,7 +21,6 @@ uvicorn==0.22.0
 
 requests
 pdfplumber
-io
 base64
 googleapiclient.discovery
 html2text
