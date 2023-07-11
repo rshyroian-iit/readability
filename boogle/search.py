@@ -68,10 +68,10 @@ def search_url(url, timestamp):
     json_object['queries'] = display_queries
     json_object['results'] = results
     research = json.dumps(json_object, indent=4)
-    with open(f'research/research{timestamp}.json', 'w') as f:
+    with open(f'boogle/research/research{timestamp}.json', 'w') as f:
         f.write(research)
     f.close()
-    return f'research/research{timestamp}.json'
+    return f'boogle/research/research{timestamp}.json'
 
 
 def search(query, timestamp, number_of_retries=0):
@@ -215,7 +215,7 @@ def search(query, timestamp, number_of_retries=0):
     json_object['queries'] = display_queries
     json_object['results'] = results
     research = json.dumps(json_object, indent=4)
-    with open(f'research/research{timestamp}.json', 'w') as f:
+    with open(f'boogle/research/research{timestamp}.json', 'w') as f:
         f.write(research)
     f.close()
 
@@ -231,7 +231,7 @@ def search(query, timestamp, number_of_retries=0):
     print("NUMBER OF RESULTS: " + str(len(results)))
     print("done with all")
     print("time taken: ", time.time() - start_time)
-    return f'research/research{timestamp}.json'
+    return f'boogle/research/research{timestamp}.json'
 
 if __name__ == '__main__':
     query = "Global Warming"
