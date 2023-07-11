@@ -35,3 +35,4 @@ fastapi
 streamlit
 Markdown
 validators
+requests_html
