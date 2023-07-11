@@ -21,7 +21,6 @@ uvicorn==0.22.0
 
 requests
 pdfplumber
-time
 io
 base64
 googleapiclient.discovery
