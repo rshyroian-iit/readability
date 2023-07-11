@@ -49,7 +49,6 @@ boost_query
 search
 PIL
 streamlit
-concurrent.futures
 markdown
 datetime
 streamlit.components.v1
