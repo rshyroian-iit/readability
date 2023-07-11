@@ -38,7 +38,7 @@ hide_streamlit_style = """
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 # Load the websites_by_category dictionary from the JSON file
-with open('websites_by_category.json', 'r') as f:
+with open('boogle/websites_by_category.json', 'r') as f:
     websites_by_category = json.load(f)
 
 # Create a dictionary to store the state of each checkbox
