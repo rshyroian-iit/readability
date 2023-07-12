@@ -114,6 +114,8 @@ def get_google_search_results(query, num_results=0):
             except:
                 title = 'Could not extract title'
                 print('title error')
+        if url.endswith('.pdf'):
+            continue
         results.append({
             'snippet': snippet,
             'url': url,
